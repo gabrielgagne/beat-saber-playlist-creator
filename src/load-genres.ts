@@ -46,7 +46,7 @@ const byArtistCacheFilePath = join('./', 'genre_by_artist.json');
 const manualSongGenreFilePath = join('./', 'manual_song_genre.json');
 const byArtistCacheFile = getCache(byArtistCacheFilePath) as Record<string, string[]>;
 const bySongCacheFile = getCache(bySongCacheFilePath) as Record<string, string[]>;
-const manualSongGenreFile = getCache(manualSongGenreFilePath) as Record<string, { genres?: string[] }>;
+const manualSongGenreFile = getCache(manualSongGenreFilePath) as Record<string, { id: string; genres?: string[] }>;
 
 const getMatchingGenres = (rawGenres: string[]): string[] => {
   return genres.filter((g) => {
@@ -74,7 +74,7 @@ const putInCache = async (trackId: string, artistId: string): Promise<boolean> =
   }
 
   if (artistId === ARTIST_NOT_FOUND) {
-    bySongCacheFile[trackId] = [];
+    bySongCacheFile[trackId] = bySongCacheFile[trackId] || [];
     return true;
   }
 

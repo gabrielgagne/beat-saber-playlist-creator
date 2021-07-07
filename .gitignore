@@ -110,6 +110,7 @@ genre_by_artist.json
 genre_by_song.json
 not_found.json
 song_hash_cache.json
+manual_song_genre.json
 
 #build
 build/
