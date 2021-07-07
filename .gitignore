@@ -108,7 +108,6 @@ dist
 artistId_cache.json
 genre_by_artist.json
 genre_by_song.json
-manual_song_genre.json
 not_found.json
 song_hash_cache.json
 
