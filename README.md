@@ -40,6 +40,7 @@ After a run, you can use not_found.json to fill out your manual_song_genre.json
 # Setup
 
 npm ci
+
 fill 'TO_FILL' fields in src/config.json
 
 # Run
