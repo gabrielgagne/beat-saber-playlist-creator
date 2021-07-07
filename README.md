@@ -8,7 +8,7 @@ At any point, you can fill manual_song_genre to override / specify un matched so
 
 Use this format: 
 
-Where the key is the song id, and the value is an object that MUST contain 'id' and 'genres'
+Where the key is the song id, and the value is an object that MUST contain 'id' and 'genres', other props are for humans
 
 
 ```
