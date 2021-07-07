@@ -4,7 +4,7 @@ Automatically creates genres and difficulty playlists. Genres ares fetch from th
 
 On the first run, it'll try to find the artist by the exact song, if not found, on the second time it'll try to match the artist (can be problematic with features and collabs)
 
-At any point, you can fill manual_song_genre to override / specify un matched song.
+At any point, you can fill manual_song_genre.json (by copy and renameing manual_song_genre.template.json) to override / specify un matched song.
 
 Use this format: 
 
