@@ -36,7 +36,7 @@ const cacheFilePath = join('./', 'song_hash_cache.json');
 const putInCache = async (songId: string, hashCache: Record<string, string>): Promise<boolean> => {
   if (!hashCache[songId]) {
     const apiMap = await getMap(songId);
-    hashCache[songId] = apiMap.hash
+    hashCache[songId] = apiMap.versions[apiMap.versions.length - 1].hash
     return false;
   }
   return true;
