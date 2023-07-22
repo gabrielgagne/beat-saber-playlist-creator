@@ -37,7 +37,9 @@ export const genres = [
   "rock",
   "ska",
   "soundtracks",
-  "techno"
+  "techno",
+  "christmas",
+  "other"
 ]
 
 
